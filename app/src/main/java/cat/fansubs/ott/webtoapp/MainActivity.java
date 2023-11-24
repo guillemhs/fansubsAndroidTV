@@ -23,7 +23,7 @@ public class MainActivity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);//for full screen
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
-        mywebView = (WebView) findViewById(R.id.webView);
+        mywebView = findViewById(R.id.webView);
         WebSettings webSettings = mywebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         mywebView.loadUrl("https://www.fansubs.cat");
@@ -36,8 +36,6 @@ public class MainActivity extends Activity {
             mywebView.goBack();
         } else {
             super.onBackPressed();
-
         }
-
     }
 }

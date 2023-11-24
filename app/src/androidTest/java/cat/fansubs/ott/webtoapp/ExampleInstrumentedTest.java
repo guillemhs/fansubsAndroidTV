@@ -23,7 +23,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() throws Exception {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext ();
-
-        assertEquals ( "com.example.najmus.webtoapp", appContext.getPackageName () );
+        assertEquals ( "cat.fansubs.ott.webtoapp", appContext.getPackageName () );
     }
 }
